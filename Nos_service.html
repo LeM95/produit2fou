@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - Produit2Fou</title>
+    <link rel="stylesheet" href="/produit2fou/styleservice.css">
+</head>
+<body>
+    <!-- Menu de Navigation -->
+    <nav class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="logo">Produits2Fou</div>
+        <div class="nav-links" id="NavBar">
+            <a href="/produit2fou/index.html">Accueil</a>
+            <a href="/produit2fou/Nos_service.html">Nos Installations</a>
+            <a href="/produit2fou/Produit.html">Produit</a>
+            <a href="/produit2fou/Contact2.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Titre de la page -->
+    <header class="header">
+        <h1 class="header-title">Nos Services</h1>
+        <p class="header-subtitle">Experts en décoration intérieure et installations de télévision élégantes et modernes.</p>
+    </header>
+
+    <!-- Section des services avec texte dans une bulle lumineuse -->
+    <section class="services" style="service {margin: 0;}">
+        <div class="neon-bubble">
+            <p class="intro-text">Chez Produit2Fou, nous transformons vos espaces intérieurs pour qu'ils soient à la fois fonctionnels et esthétiques. Nos solutions sur mesure en décoration et installation TV ajoutent une touche futuriste et classe à votre intérieur.</p>
+            <button class="chat-button" id="appeler"><a href="tel:+33767301511">Nous appeler</a></button>
+            <button class="info" id="myButton" onclick=" toggleDetails(this)">☰   Tarifs des installation</button>
+            <div id="tarif" ><div class="installation-packs">
+                <h1>Packs de Services d'Installation</h1>
+                <p>
+                  Découvrez nos packs d'installation sur mesure, conçus pour sublimer votre espace de vie !
+                </p>
+              
+                <div class="pack">
+                  <h2>Pack à 850€</h2>
+                  <ul>
+                    <li>Inclut 3 tasseaux en bois de votre choix, pour un design personnalisé.</li>
+                  </ul>
+                </div>
+              
+                <div class="pack">
+                  <h2>Pack à 750€</h2>
+                  <ul>
+                    <li>Comprend 2 tasseaux en bois au choix, alliant esthétique et fonctionnalité.</li>
+                  </ul>
+                </div>
+              
+                <div class="pack">
+                  <h2>Pack à 650€</h2>
+                  <ul>
+                    <li>Comprend 1 tasseau en bois au choix, alliant esthétique et une touche de nature.</li>
+                  </ul>
+                </div>
+              
+                <div class="pack">
+                  <h2>Pack à 600€</h2>
+                  <ul>
+                    <li>Option sans tasseaux, idéal pour une installation simple et élégante.</li>
+                  </ul>
+                </div>
+              
+                <div class="pack">
+                  <h2>Pack Full Tasseaux (950€ - 1350€)</h2>
+                  <ul>
+                    <li>Transformez votre mur en une véritable œuvre d'art avec l’ensemble de tasseaux.</li>
+                    <li>Prix variable selon la taille de votre mur.</li>
+                  </ul>
+                </div>
+              
+                <h3>Ce qui est inclus dans tous nos packs :</h3>
+                <ul class="op">
+                  <li>Plaque en PVC effet marbre pour une touche d'élégance.</li>
+                  <li>Encadrement en métal pour une solidité dans le temps plus efficace.</li>
+                  <li>Accrochage de la télévision pour un rendu soigné.</li>
+                  <li>Installation d’une prise derrière la télévision pour plus de praticité.</li>
+                  <li>Éclairages LED intégrés qui mettent en valeur votre décoration.</li>
+                  <li>Système de câblage discret pour un rendu épuré et ordonné.</li>
+                  <li>Main-d’œuvre professionnelle, avec une équipe de deux installateurs pour une installation rapide et efficace.</li>
+                  <li>Déplacement inclus pour un rayon de 35 km.</li>
+                  <li>Supports TV inclus</li>
+                </ul>
+              
+                <h3>Options supplémentaires :</h3>
+                <ul class="op">
+                  <li >Installation et montage d’un meuble TV :</li>
+                  <li >a partir de 1,80 m et plus: 130€</li>
+                  <li >Moins de 1,80 m : 110€ (meuble fourni par vos soins)</li>
+                </ul>
+              
+                <h3>Conditions de réservation :</h3>
+                <p>
+                  Pour garantir votre date d’installation, un acompte de 50€ est requis.
+                  Merci d’envoyer une capture d’écran de votre virement pour confirmation,
+                  afin de minimiser les annulations de dernière minute.
+                </p>
+              </div></div>
+        </div>
+        
+        <div class="neon-bubble" id="neonrose">
+            <p class="intro-text">Pour découvrir davantage de photos et vidéos de nos prestations, n'hésitez pas à visiter notre page Instagram et TikTok !</p>
+            <button class="chat-button" id="insta"><a href="https://www.instagram.com/produits2fou/profilecard">Instagram</a></button>
+            <button class="chat-button" id="tiktok"><a href="https://www.tiktok.com/@produits2fou?is_from_webapp=1&sender_device=pc">TikTok</a></button>
+        </div>     
+        <!-- Galerie d'images des installations -->
+        <div class="gallery">
+            <div class="gallery-item" ><video width="400" height="auto" autoplay loop muted>
+                <source src="/produit2fou/img/BBTC7906.MP4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+              </video></div>
+              <div class="gallery-item" ><video width="400" height="auto" autoplay loop muted>
+                <source src="/produit2fou/img/IMG_8062.MOV" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+              </video></div>
+              <div class="gallery-item" ><video width="400" height="auto" autoplay loop muted>
+                <source src="/produit2fou/img/IMG_7701.MP4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+              </video></div>
+              <div class="gallery-item" ><video width="400" height="auto" autoplay loop muted>
+                <source src="/produit2fou/img/IMG_7909.MP4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+              </video></div>
+              <button id="btnafficherinstallation" onclick="toggleDetailsinstallationplus(this)">Voir plus</button>
+              <div id="autre">
+              <div class="gallery-item" ><video width="400" height="auto" autoplay loop muted>
+                <source src="/produit2fou/img/IMG_7794.MP4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+              </video></div>
+              <div class="gallery-item" ><video width="400" height="auto" autoplay loop muted>
+                <source src="/produit2fou/img/IMG_7912.MP4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+              </video></div>
+              <div class="gallery-item" ><video width="400" height="auto" autoplay loop muted>
+                <source src="/produit2fou/img/IMG_7577.MP4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+              </video></div>
+              <div class="gallery-item" ><video width="400" height="auto" autoplay loop muted>
+                <source src="/produit2fou/img/a49fc7df-aad3-4100-89ff-6f466a394704.MP4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+              </video></div>
+              
+              <div class="gallery-item" ><video width="400" height="auto" autoplay loop muted>
+                <source src="/produit2fou/img/IMG_7403.MP4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+              </video></div>
+              <div class="gallery-item" ><img src="/produit2fou/img/IMG_7375.JPEG" alt="Installation 4"></div>
+            <div class="gallery-item" ><img src="/produit2fou/img/installlation image.jpg" alt="Installation 2"></div>
+            <div class="gallery-item" ><img src="/produit2fou/img/IMAge tasseaux.jpg" alt="Installation 3"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2024 Produit2Fou | Décoration Intérieure et Produits de Qualité</p>
+    </footer>
+    <!-- Script pour activer le menu hamburger -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+        function toggleDetails(button) {
+            const details = button.nextElementSibling;
+            const bbb = document.getElementById("myButton");
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "☰  Fermer les Tarifs des installation ";
+                bbb.style.borderRadius = "0"; 
+                details.style.paddingBottom = "2px";
+            } else {
+                details.style.display = "none";
+                button.textContent = "☰ Ouvrir les Tarifs des installation ";
+                bbb.style.borderBottomLeftRadius = "15px";
+                bbb.style.borderBottomRightRadius = "15px";  
+                details.style.paddingBottom = "0px";
+    }           
+}
+        function toggleDetailsinstallationplus(button) {
+            const test = document.getElementById("autre");
+            if (test.style.display === "none" || test.style.display === "") {
+                test.style.display = "block";
+                button.textContent = "Voir plus";
+            } else {
+                test.style.display = "none";
+                button.textContent = "Voir plus";
+    }
+}
+    </script>
+</body>
+</html>

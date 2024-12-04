@@ -1,0 +1,253 @@
+/* Style général */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Menu de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 153, 255, 0.2);
+}
+
+.logo {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #1e90ff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #1e90ff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.nav-links a:hover {
+    background-color: #00ffcc;
+    color: #111;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    color: #1e90ff;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 50px 15px;
+    background: linear-gradient(135deg,#111, #1e90ff, #111);
+    color: #fff;
+    
+    overflow: hidden;
+}
+
+.hero-title {
+    font-size: 2.5em;
+    margin: 0;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    color: #aaa;
+    margin: 15px 0;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #111;
+    background: linear-gradient(45deg, #00ffcc, #1e90ff);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 153, 255, 0.5);
+}
+
+/* Neon Glow Animation */
+@keyframes neon-glow {
+    0% {
+        text-shadow: 0 0 5px #00ffcc, 0 0 10px #1e90ff, 0 0 15px #1e90ff, 0 0 20px #1e90ff;
+    }
+    100% {
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #1e90ff, 0 0 30px #1e90ff, 0 0 40px #1e90ff;
+    }
+}
+
+/* Services Section */
+.services-section {
+    padding: 30px;
+    background-color: #222;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 153, 255, 0.3);
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #111;
+    padding: 30px;
+    text-align: center;
+    color: #aaa;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #666;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        
+    }
+}
+.barre-decorative{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(135deg,#111, #1e90ff,#ff1ee1, #111);
+    position: absolute;
+}
+/* Style général pour le modal */
+.modal {
+    display: none; /* Masqué par défaut */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Contenu de la fenêtre */
+.modal-content {
+    background: #1e1e1e;
+    color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+
+}
+
+/* Bouton pour fermer */
+.close-btn {
+    color: #fff;
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+/* Style pour la liste */
+.modal-content ul {
+    text-align: left;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.modal-content ul li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.modal-content ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #00ffcc;
+}

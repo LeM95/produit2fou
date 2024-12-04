@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit2Fou</title>
+    <link rel="stylesheet" href="/produit2fou/styleservice.css">
+    <script src="/produit2fou/produit.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Menu de Navigation -->
+    <nav class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="logo">Produits2Fou</div>
+        <div class="nav-links">
+            <a href="/produit2fou/index.html">Accueil</a>
+            <a href="/produit2fou/Nos_service.html">Nos Installations</a>
+            <a href="/produit2fou/Produit.html">Produit</a>  
+            <a href="/produit2fou/Contact2.html">Contact</a>
+        </div>
+    </nav>
+    <div class="barre-decorative"></div>
+    <div class="product-intro">
+        <h1 class="neon-title">Découvrez Nos Produits d'Exception</h1>
+        <p class="intro-text">
+          Découvrez une collection où l'élégance rencontre l'innovation. Chaque produit a été conçu pour transformer votre intérieur en un espace luxueux et intemporel.
+        </p>
+        <p class="intro-text">
+          ✨ Des matériaux premium, des designs exclusifs, et des détails minutieux, parce que votre espace mérite le meilleur.
+        </p>
+      </div>
+      <div class="delivery-info">
+        <h2 class="delivery-title">📞 Modalités de Livraison ou Retrait</h2>
+        <p class="delivery-text">
+          Pour recevoir vos produits directement chez vous ou pour venir les récupérer en magasin, contactez-nous :</p>
+          <button  class="chat-button" id="appeler"><strong><a href="tel:+33767301511">07 67 30 15 11</a></strong></button>
+        
+        <p class="delivery-text">
+          Notre équipe se fera un plaisir de vous accompagner pour organiser votre livraison ou préparer votre commande.
+        </p>
+      </div>
+      <style></style>
+    <!-- Section Produit -->
+    <section id="produit" class="product-grid">
+        <button id="afficherproduit" onclick="toggleDetailsproduit(this)" >afficher la liste des produit</button>
+        <div id="cacher">
+        <div class="product-card">
+            <div class="slideshow-container">
+                <img src="/produit2fou/img/plaque pvc effet marbre classic.jpg" alt="" class="product-image">
+            </div>
+            <h3 class="product-name">Plaque PVC effet marbre</h3>
+            <p class="product-price">75€</p>
+            <button onclick="toggleDetails(this)" class="product-button">Détails et Dimensions</button>
+            <div class="product-details">
+                <p>Dimensions : 260x120x0.3 cm</p>
+                <p>Matériau : Materiau en PVC</p>
+                <p>Description : Découvrez nos plaques en PVC effet marbre, la solution idéale pour transformer vos espaces avec élégance et modernité. Ces plaques offrent un design raffiné et futuriste, alliant simplicité et sophistication. .</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/produit2fou/img/file.png" alt="Produit 1" class="product-image">
+            <h3 class="product-name">Tasseaux en bois</h3>
+            <p class="product-price">69€</p>
+            <button onclick="toggleDetails(this)" class="product-button">Détails et Dimensions</button>
+            <div class="product-details">
+                <p>Dimensions : 240x60x2 cm</p>
+                <p>Matériau :  Bois de qualité</p>
+                <p>Description : Apportez chaleur et style à vos espaces avec nos tasseaux en bois disponibles en plusieurs coloris. Parfaits pour des projets décoratifs ou fonctionnels, ils s’intègrent facilement dans tous les types d’intérieurs. Faciles à poser et résistants, ces tasseaux offrent une finition élégante et personnalisée à vos murs, plafonds ou meubles.</p>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="/produit2fou/img/93a38fe260ccb61a1894aa61c2cae5fa.webp" alt="Lavabo Hight-tech" class="product-image">
+            <h3 class="product-name">Lavabo Hight-tech </h3>
+            <p class="product-price">250 €</p>
+            <button onclick="toggleDetails(this)" class="product-button">Détails et Dimensions</button>
+            <div class="product-details">
+                <p>Dimensions : 76x100x30 cm</p>
+                <p>Matériau : acier</p>
+                <p>Description : Lavabo avec plusieur fonctionnalitée trés sophistiqué et eleguant donne une touche Futuriste a votre Cuisine </p>
+            </div>
+        </div>
+        <!-- Ajoute d'autres cartes produit ici -->
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2024 Produit2Fou | Décoration Intérieure et Produits de Qualité</p>
+    </footer>
+</body>
+</html>
