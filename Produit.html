@@ -46,45 +46,6 @@
     <!-- Section Produit -->
     <section id="produit" class="product-grid">
         <button id="afficherproduit" onclick="toggleDetailsproduit(this)" >afficher la liste des produit</button>
-        <div id="cacher">
-        <div class="product-card">
-            <div class="slideshow-container">
-                <img src="/produit2fou/img/plaque pvc effet marbre classic.png" alt="" class="product-image">
-            </div>
-            <h3 class="product-name">Plaque PVC effet marbre</h3>
-            <p class="product-price">75€</p>
-            <button onclick="toggleDetails(this)" class="product-button">Détails et Dimensions</button>
-            <div class="product-details">
-                <p>Dimensions : 260x120x0.3 cm</p>
-                <p>Matériau : Materiau en PVC</p>
-                <p>Description : Découvrez nos plaques en PVC effet marbre, la solution idéale pour transformer vos espaces avec élégance et modernité. Ces plaques offrent un design raffiné et futuriste, alliant simplicité et sophistication. .</p>
-            </div>
-        </div>
-        <div class="product-card">
-            <img src="/produit2fou/img/file.png" alt="Produit 1" class="product-image">
-            <h3 class="product-name">Tasseaux en bois</h3>
-            <p class="product-price">69€</p>
-            <button onclick="toggleDetails(this)" class="product-button">Détails et Dimensions</button>
-            <div class="product-details">
-                <p>Dimensions : 240x60x2 cm</p>
-                <p>Matériau :  Bois de qualité</p>
-                <p>Description : Apportez chaleur et style à vos espaces avec nos tasseaux en bois disponibles en plusieurs coloris. Parfaits pour des projets décoratifs ou fonctionnels, ils s’intègrent facilement dans tous les types d’intérieurs. Faciles à poser et résistants, ces tasseaux offrent une finition élégante et personnalisée à vos murs, plafonds ou meubles.</p>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <img src="/produit2fou/img/93a38fe260ccb61a1894aa61c2cae5fa.webp" alt="Lavabo Hight-tech" class="product-image">
-            <h3 class="product-name">Lavabo Hight-tech </h3>
-            <p class="product-price">250 €</p>
-            <button onclick="toggleDetails(this)" class="product-button">Détails et Dimensions</button>
-            <div class="product-details">
-                <p>Dimensions : 76x100x30 cm</p>
-                <p>Matériau : acier</p>
-                <p>Description : Lavabo avec plusieur fonctionnalitée trés sophistiqué et eleguant donne une touche Futuriste a votre Cuisine </p>
-            </div>
-        </div>
-        <!-- Ajoute d'autres cartes produit ici -->
-        </div>
         <div class="product-card" data-product="plaque-pvc">
             <div class="slideshow-container">
                 <img src="/produit2fou/img/plaque/WhatsApp Image 2025-01-08 at 10.30.13 (1).jpeg" alt="Plaque PVC effet marbre - Blanc" class="product-image main-image" data-product="plaque-pvc">
@@ -137,7 +98,7 @@
                 <img src="/produit2fou/img/tasseaux_noir.jpg" alt="Noir" class="thumbnail" data-product="tasseaux" onclick="changeImage(this)">
             </div>
             <h3 class="product-name">Tasseaux en bois</h3>
-            <p class="product-price">69€</p>
+            <p class="product-price">59€</p>
             <button onclick="toggleDetails(this)" class="product-button">Détails et Dimensions</button>
             <div class="product-details">
                 <p>Dimensions : 240x60x2 cm</p>
@@ -145,6 +106,21 @@
                 <p>Description : Apportez chaleur et style à vos espaces avec nos tasseaux en bois disponibles en plusieurs coloris. Parfaits pour des projets décoratifs ou fonctionnels, ils s’intègrent facilement dans tous les types d’intérieurs. Faciles à poser et résistants, ces tasseaux offrent une finition élégante et personnalisée à vos murs, plafonds ou meubles.</p>
             </div>
         </div>
+        <div id="cacher">
+        <div class="product-card">
+            <img src="/produit2fou/img/93a38fe260ccb61a1894aa61c2cae5fa.webp" alt="Lavabo Hight-tech" class="product-image">
+            <h3 class="product-name">Lavabo Hight-tech </h3>
+            <p class="product-price">250 €</p>
+            <button onclick="toggleDetails(this)" class="product-button">Détails et Dimensions</button>
+            <div class="product-details">
+                <p>Dimensions : 76x100x30 cm</p>
+                <p>Matériau : acier</p>
+                <p>Description : Lavabo avec plusieur fonctionnalitée trés sophistiqué et eleguant donne une touche Futuriste a votre Cuisine </p>
+            </div>
+        </div>
+        <!-- Ajoute d'autres cartes produit ici -->
+        </div>
+        
         
         <style>
             .product-card {
